@@ -9,9 +9,25 @@ public class SpawnNewSection : MonoBehaviour
 
     private void OnTriggerEnter(Collider Other)
     {
-        if (Other.CompareTag("player"))
+        if (Other.CompareTag("Player"))
         {
+            Debug.Log("Entered colider");
             //instantiate add (x = ssd, y = 0, z = 0)
         }
+    }
+
+    private void OnTriggerExit(Collider Other)
+    {
+        if (Other.CompareTag("Player"))
+        {
+            Debug.Log("Exited colider");
+            //put code here to return to object pool
+            Destroy(gameObject);
+        }
+    }
+
+    private void OnDestroy()
+    {
+        Debug.Log("destroyed");
     }
 }
