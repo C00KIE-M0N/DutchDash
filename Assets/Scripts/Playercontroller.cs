@@ -28,12 +28,12 @@ public class Playercontroller : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.D))
         {
-            Player.transform.position += new Vector3(1, 0, 0);
+            Player.transform.position += new Vector3(0, 0, -2);
         }
 
         if (Input.GetKeyDown(KeyCode.A))
         {
-            Player.transform.position += new Vector3(-1, 0, 0);
+            Player.transform.position += new Vector3(0, 0, 2);
         }
 
         if (Input.GetKeyDown(KeyCode.Space) && GroundHit)
@@ -42,7 +42,7 @@ public class Playercontroller : MonoBehaviour
             GroundHit = false;
         }
 
-        Vector3 newpos = new Vector3(Mathf.Clamp(Player.transform.position.x, xMin, xMax), Player.transform.position.y, Player.transform.position.z);
+        Vector3 newpos = new Vector3(Player.transform.position.x, Player.transform.position.y,Mathf.Clamp(Player.transform.position.z, xMin, xMax));
         Player.transform.position = Vector3.Slerp(Player.transform.position, newpos, journyTime);
     }
 }
