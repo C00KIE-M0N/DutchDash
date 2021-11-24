@@ -2,21 +2,22 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Playercontroller : MonoBehaviour
+public class PlayerController2 : MonoBehaviour
 {
-    [SerializeField] private GameObject Player;
-
-    [SerializeField] private float xMin = -2, xMax = 2;
-    [SerializeField] private float journyTime = 1f;
+    [SerializeField] private Transform Player;
     [SerializeField] private float thrust = 20;
-    [SerializeField] private float LaneSwitchStrength;
+    [SerializeField] private float journyTime;
+    [SerializeField] private int LaneNumber;
     private Rigidbody m_RigidBody;
 
     public bool GroundHit;
 
+    public Transform[] Lanes;
+
     private void Start()
     {
         m_RigidBody = GetComponent<Rigidbody>();
+        LaneNumber = 2;
     }
 
     private void OnCollisionEnter()
@@ -24,16 +25,32 @@ public class Playercontroller : MonoBehaviour
         GroundHit = true;
     }
 
+    //lane 0 is 2 in de array
+    //dus
+    //-2 = 0
+    //-1 = 1
+    // 0 = 2
+    // 1 = 3
+    // 2 = 4
+
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.D) || Input.GetKeyDown(KeyCode.RightArrow))
         {
-            Player.transform.position += new Vector3(0, 0, -LaneSwitchStrength);
+            if (LaneNumber < Lanes.Length)
+            {
+                LaneNumber += 1;
+                UpdatePlayer();
+            }
         }
 
         if (Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.LeftArrow))
         {
-            Player.transform.position += new Vector3(0, 0, LaneSwitchStrength);
+            if (LaneNumber > 0)
+            {
+                LaneNumber -= 1;
+                UpdatePlayer();
+            }
         }
 
         if (Input.GetKeyDown(KeyCode.Space) && GroundHit)
@@ -41,8 +58,10 @@ public class Playercontroller : MonoBehaviour
             m_RigidBody.AddForce(transform.up * thrust);
             GroundHit = false;
         }
+    }
 
-        Vector3 newpos = new Vector3(Player.transform.position.x, Player.transform.position.y, Mathf.Clamp(Player.transform.position.z, xMax, xMin));
-        Player.transform.position = Vector3.Lerp(Player.transform.position, newpos, journyTime);
+    public void UpdatePlayer()
+    {
+        Player.position = Lanes[LaneNumber].position;
     }
 }
