@@ -5,12 +5,14 @@ using UnityEngine;
 public class SpawnSectionAddSpawn : MonoBehaviour
 {
     public GameObject[] Sections;
+
     // how far away the other platform spawns
     public float SectionSpawnDistance = 0;
+
     // Start is called before the first frame update
-    void Start()
+    private void Start()
     {
-        Instantiate(Sections[Random.Range(0, Sections.Length)], new Vector3(gameObject.transform.position.x + SectionSpawnDistance, 0, 0), Quaternion.identity);
+        Instantiate(Sections[Random.Range(0, Sections.Length)], new Vector3(gameObject.transform.position.x + SectionSpawnDistance, gameObject.transform.position.y - 0.0001f, 0), Quaternion.identity);
     }
 
     private void OnTriggerExit(Collider Other)
