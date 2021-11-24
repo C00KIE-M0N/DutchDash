@@ -8,11 +8,13 @@ public class UI : MonoBehaviour
 
     private void Start()
     {
+        Time.timeScale = 0f;
         StartPanel.SetActive(true);
     }
 
     public void StartButton()
     {
         StartPanel.SetActive(false);
+        Time.timeScale = 1f;
     }
 }

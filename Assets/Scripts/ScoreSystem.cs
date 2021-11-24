@@ -32,6 +32,7 @@ public class ScoreSystem : MonoBehaviour
         m_oldPosisition = transform.position;
 
         m_totalScore = m_totalDistance * ScoreMod;
+        m_totalScore = Mathf.RoundToInt(m_totalScore);
         score_text.text = m_totalScore.ToString();
     }
 }
