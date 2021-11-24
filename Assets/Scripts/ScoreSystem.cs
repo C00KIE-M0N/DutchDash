@@ -1,12 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ScoreSystem : MonoBehaviour
 {
     public float ScoreMod;
 
     [SerializeField] private float m_totalScore;
+    [SerializeField] private Text score_text;
 
     private Vector3 m_oldPosisition;
     private float m_totalDistance;
@@ -30,5 +32,6 @@ public class ScoreSystem : MonoBehaviour
         m_oldPosisition = transform.position;
 
         m_totalScore = m_totalDistance * ScoreMod;
+        score_text.text = m_totalScore.ToString();
     }
 }
