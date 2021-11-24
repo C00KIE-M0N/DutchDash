@@ -9,7 +9,7 @@ public class Playercontroller : MonoBehaviour
     [SerializeField] float xMin = -2, xMax = 2;
     [SerializeField] float journyTime = 1f;
     [SerializeField] float thrust = 20;
-
+    [SerializeField] float LaneSwitchStrength;
     Rigidbody m_RigidBody;
 
     public bool GroundHit;
@@ -28,12 +28,12 @@ public class Playercontroller : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.D))
         {
-            Player.transform.position += new Vector3(1, 0, 0);
+            Player.transform.position += new Vector3(0, 0, -LaneSwitchStrength);
         }
 
         if (Input.GetKeyDown(KeyCode.A))
         {
-            Player.transform.position += new Vector3(-1, 0, 0);
+            Player.transform.position += new Vector3(0, 0, LaneSwitchStrength);
         }
 
         if (Input.GetKeyDown(KeyCode.Space) && GroundHit)
@@ -42,7 +42,7 @@ public class Playercontroller : MonoBehaviour
             GroundHit = false;
         }
 
-        Vector3 newpos = new Vector3(Mathf.Clamp(Player.transform.position.x, xMin, xMax), Player.transform.position.y, Player.transform.position.z);
+        Vector3 newpos = new Vector3(Player.transform.position.x, Player.transform.position.y, Mathf.Clamp(Player.transform.position.z, xMax, xMin));
         Player.transform.position = Vector3.Slerp(Player.transform.position, newpos, journyTime);
     }
 }
