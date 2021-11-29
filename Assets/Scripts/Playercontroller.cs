@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 using UnityEngine;
 
 public class Playercontroller : MonoBehaviour
@@ -26,6 +27,7 @@ public class Playercontroller : MonoBehaviour
 
     void Update()
     {
+
         if (Input.GetKeyDown(KeyCode.D))
         {
             Player.transform.position += new Vector3(0, 0, -2);
