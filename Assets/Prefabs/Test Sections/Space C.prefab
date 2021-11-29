@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 1355887073338068027}
   - component: {fileID: 1244516000591717835}
   - component: {fileID: 7990703720800766593}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: lane 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -330,7 +330,7 @@ GameObject:
   - component: {fileID: 2035698838565711927}
   - component: {fileID: 1150311839562271112}
   - component: {fileID: 2079944730299550418}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Long obstacle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -646,7 +646,7 @@ GameObject:
   - component: {fileID: 6264507580065481313}
   - component: {fileID: 1831739881654849754}
   - component: {fileID: 8129375353884855073}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: lane 5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -963,7 +963,7 @@ GameObject:
   - component: {fileID: 85111954682850586}
   - component: {fileID: 6555118511348656376}
   - component: {fileID: 5430390691242086787}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Long obstacle (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1279,7 +1279,7 @@ GameObject:
   - component: {fileID: 7329794155168851014}
   - component: {fileID: 3491713570201772056}
   - component: {fileID: 2420236178722522971}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Long obstacle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1595,7 +1595,7 @@ GameObject:
   - component: {fileID: 776922138301414185}
   - component: {fileID: 8150534549560391826}
   - component: {fileID: 571793489685894657}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Short obstacle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2236,6 +2236,7 @@ MonoBehaviour:
   - {fileID: 6632187188456915007, guid: 068c415c1de45be49b14b105d7825fb5, type: 3}
   - {fileID: 8795175431925886326, guid: 4a4d32b3c77e20a469e47f6aa5fcc94b, type: 3}
   - {fileID: 2493402855659000625, guid: dffef6553ed54444c9475adf8f5c00b7, type: 3}
+  Parent: {fileID: 0}
   SectionSpawnDistance: 10.2
 --- !u!1 &7105858090371234305
 GameObject:
@@ -2250,7 +2251,7 @@ GameObject:
   - component: {fileID: 2248909929603672018}
   - component: {fileID: 4484311733489955546}
   - component: {fileID: 8219906607159484069}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Long obstacle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2566,7 +2567,7 @@ GameObject:
   - component: {fileID: 2516322700909988762}
   - component: {fileID: 6068673689837492896}
   - component: {fileID: 2892327514325852937}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: lane 4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2884,7 +2885,7 @@ GameObject:
   - component: {fileID: 8600709845556264047}
   - component: {fileID: 4210659082994948034}
   - component: {fileID: 3007745231700119430}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: lane 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3200,7 +3201,7 @@ GameObject:
   - component: {fileID: 7022645977938607762}
   - component: {fileID: 4974906967570159176}
   - component: {fileID: 3064556714096552564}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Long obstacle (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3516,7 +3517,7 @@ GameObject:
   - component: {fileID: 811759288643750956}
   - component: {fileID: 1185073345344347323}
   - component: {fileID: 5965452449893195900}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Long obstacle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3832,7 +3833,7 @@ GameObject:
   - component: {fileID: 7948837808221098151}
   - component: {fileID: 8944637412894081181}
   - component: {fileID: 713903333108044158}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: lane 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
