@@ -1,21 +1,20 @@
 using System.Collections;
 using System.Collections.Generic;
-using UnityEngine.SceneManagement;
 using UnityEngine;
 
 public class Playercontroller : MonoBehaviour
 {
-    [SerializeField] GameObject Player;
+    [SerializeField] private GameObject Player;
 
-    [SerializeField] float xMin = -2, xMax = 2;
-    [SerializeField] float journyTime = 1f;
-    [SerializeField] float thrust = 20;
-
-    Rigidbody m_RigidBody;
+    [SerializeField] private float xMin = -2, xMax = 2;
+    [SerializeField] private float journyTime = 1f;
+    [SerializeField] private float thrust = 20;
+    [SerializeField] private float LaneSwitchStrength;
+    private Rigidbody m_RigidBody;
 
     public bool GroundHit;
 
-    void Start()
+    private void Start()
     {
         m_RigidBody = GetComponent<Rigidbody>();
     }
@@ -25,17 +24,16 @@ public class Playercontroller : MonoBehaviour
         GroundHit = true;
     }
 
-    void Update()
+    private void Update()
     {
-
-        if (Input.GetKeyDown(KeyCode.D))
+        if (Input.GetKeyDown(KeyCode.D) || Input.GetKeyDown(KeyCode.RightArrow))
         {
-            Player.transform.position += new Vector3(0, 0, -2);
+            Player.transform.position += new Vector3(0, 0, -LaneSwitchStrength);
         }
 
-        if (Input.GetKeyDown(KeyCode.A))
+        if (Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.LeftArrow))
         {
-            Player.transform.position += new Vector3(0, 0, 2);
+            Player.transform.position += new Vector3(0, 0, LaneSwitchStrength);
         }
 
         if (Input.GetKeyDown(KeyCode.Space) && GroundHit)
@@ -44,7 +42,7 @@ public class Playercontroller : MonoBehaviour
             GroundHit = false;
         }
 
-        Vector3 newpos = new Vector3(Player.transform.position.x, Player.transform.position.y,Mathf.Clamp(Player.transform.position.z, xMin, xMax));
-        Player.transform.position = Vector3.Slerp(Player.transform.position, newpos, journyTime);
+        Vector3 newpos = new Vector3(Player.transform.position.x, Player.transform.position.y, Mathf.Clamp(Player.transform.position.z, xMax, xMin));
+        Player.transform.position = Vector3.Lerp(Player.transform.position, newpos, journyTime);
     }
 }
