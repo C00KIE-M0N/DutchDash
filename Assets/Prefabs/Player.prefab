@@ -161,7 +161,6 @@ GameObject:
   - component: {fileID: 1107844798292960921}
   - component: {fileID: 1107844798292960920}
   - component: {fileID: 1107844798292960923}
-  - component: {fileID: 1107844798292960922}
   - component: {fileID: 1107844798292960927}
   - component: {fileID: 1107844798292960924}
   m_Layer: 0
@@ -249,24 +248,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &1107844798292960922
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1107844798292960917}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 82d17bb56bdafe54f98b5fb4cd6dd59a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Player: {fileID: 1107844798292960917}
-  xMin: -4
-  xMax: 4
-  journyTime: 2
-  thrust: 400
-  GroundHit: 1
 --- !u!54 &1107844798292960927
 Rigidbody:
   m_ObjectHideFlags: 0
