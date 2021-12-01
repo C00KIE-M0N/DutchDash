@@ -3702,19 +3702,6 @@ Mesh:
     offset: 0
     size: 0
     path: 
---- !u!135 &612656871
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1107844797671603782}
-  m_Material: {fileID: 13400000, guid: 93e151b0bfc433445978ab28867182ab, type: 2}
-  m_IsTrigger: 0
-  m_Enabled: 0
-  serializedVersion: 2
-  m_Radius: 0.49999997
-  m_Center: {x: 0.00000047683716, y: 0, z: 0}
 --- !u!43 &638785112
 Mesh:
   m_ObjectHideFlags: 0
