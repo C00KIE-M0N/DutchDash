@@ -41,26 +41,26 @@ public class PlayerController2 : MonoBehaviour
         // Does the ray intersect any objects excluding the player layer
         if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.left), out hit, Mathf.Infinity, layerMask))
         {
-            Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.left) * hit.distance, Color.yellow);
+            Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.left) * hit.distance, Color.green);
 
         }
         else
         {
-            Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.left) * 1, Color.white);
+            Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.left) * 1, Color.red);
             Debug.Log("Did not Hit");
-            PlayerMovement();
+            PlayerMovementA();
         }
 
         if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.right), out hit, Mathf.Infinity, layerMask))
         {
-            Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.right) * hit.distance, Color.yellow);
+            Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.right) * hit.distance, Color.green);
 
         }
         else
         {
-            Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.right) * 1, Color.white);
+            Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.right) * 1, Color.red);
             Debug.Log("Did not Hit");
-            PlayerMovement();
+            PlayerMovementD();
         }
 
         if (Input.GetKeyDown(KeyCode.Space) && GroundHit)
@@ -75,16 +75,8 @@ public class PlayerController2 : MonoBehaviour
         Player.position = Lanes[LaneNumber].position;
     }
 
-    public void PlayerMovement()
+    public void PlayerMovementA()
     {
-        if (Input.GetKeyDown(KeyCode.D) || Input.GetKeyDown(KeyCode.RightArrow))
-        {
-            if (LaneNumber < Lanes.Length)
-            {
-                LaneNumber += 1;
-                UpdatePlayer();
-            }
-        }
 
         if (Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.LeftArrow))
         {
@@ -95,5 +87,18 @@ public class PlayerController2 : MonoBehaviour
             }
         }
        
+    }
+
+    public void PlayerMovementD()
+    {
+        if (Input.GetKeyDown(KeyCode.D) || Input.GetKeyDown(KeyCode.RightArrow))
+        {
+            if (LaneNumber < Lanes.Length)
+            {
+                LaneNumber += 1;
+                UpdatePlayer();
+            }
+        }
+
     }
 }
