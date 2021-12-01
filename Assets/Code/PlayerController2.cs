@@ -10,8 +10,6 @@ public class PlayerController2 : MonoBehaviour
     [SerializeField] private int LaneNumber;
     private Rigidbody m_RigidBody;
 
-    int layerMask = 1 << 8;
-
     public bool GroundHit;
 
     public Transform[] Lanes;
@@ -37,46 +35,6 @@ public class PlayerController2 : MonoBehaviour
 
     private void Update()
     {
-        RaycastHit hit;
-        // Does the ray intersect any objects excluding the player layer
-        if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.left), out hit, Mathf.Infinity, layerMask))
-        {
-            Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.left) * hit.distance, Color.yellow);
-
-        }
-        else
-        {
-            Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.left) * 1, Color.white);
-            Debug.Log("Did not Hit");
-            PlayerMovement();
-        }
-
-        if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.right), out hit, Mathf.Infinity, layerMask))
-        {
-            Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.right) * hit.distance, Color.yellow);
-
-        }
-        else
-        {
-            Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.right) * 1, Color.white);
-            Debug.Log("Did not Hit");
-            PlayerMovement();
-        }
-
-        if (Input.GetKeyDown(KeyCode.Space) && GroundHit)
-        {
-            m_RigidBody.AddForce(transform.up * thrust);
-            GroundHit = false;
-        }
-    }
-
-    public void UpdatePlayer()
-    {
-        Player.position = Lanes[LaneNumber].position;
-    }
-
-    public void PlayerMovement()
-    {
         if (Input.GetKeyDown(KeyCode.D) || Input.GetKeyDown(KeyCode.RightArrow))
         {
             if (LaneNumber < Lanes.Length)
@@ -94,6 +52,16 @@ public class PlayerController2 : MonoBehaviour
                 UpdatePlayer();
             }
         }
-       
+
+        if (Input.GetKeyDown(KeyCode.Space) && GroundHit)
+        {
+            m_RigidBody.AddForce(transform.up * thrust);
+            GroundHit = false;
+        }
+    }
+
+    public void UpdatePlayer()
+    {
+        Player.position = Lanes[LaneNumber].position;
     }
 }

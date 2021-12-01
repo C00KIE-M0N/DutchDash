@@ -1,5 +1,36 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &649497648
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 649497649}
+  m_Layer: 0
+  m_Name: spawnObject (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 1206586993520771344, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &649497649
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 649497648}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 1.962, y: -0.007, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 7576348206254033246}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &490544958008017881
 GameObject:
   m_ObjectHideFlags: 0
@@ -13,7 +44,7 @@ GameObject:
   - component: {fileID: 1355887073338068027}
   - component: {fileID: 1244516000591717835}
   - component: {fileID: 7990703720800766593}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: lane 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -248,7 +279,7 @@ MonoBehaviour:
   m_PreserveMeshAssetOnDestroy: 0
   assetGuid: 
   m_Mesh: {fileID: 0}
-  m_VersionIndex: 2462
+  m_VersionIndex: 2471
   m_IsSelectable: 1
   m_SelectedFaces: 
   m_SelectedEdges: []
@@ -330,7 +361,7 @@ GameObject:
   - component: {fileID: 2035698838565711927}
   - component: {fileID: 1150311839562271112}
   - component: {fileID: 2079944730299550418}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Long obstacle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -564,7 +595,7 @@ MonoBehaviour:
   m_PreserveMeshAssetOnDestroy: 0
   assetGuid: 
   m_Mesh: {fileID: 0}
-  m_VersionIndex: 180
+  m_VersionIndex: 189
   m_IsSelectable: 1
   m_SelectedFaces: 
   m_SelectedEdges: []
@@ -646,7 +677,7 @@ GameObject:
   - component: {fileID: 6264507580065481313}
   - component: {fileID: 1831739881654849754}
   - component: {fileID: 8129375353884855073}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: lane 5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -881,7 +912,7 @@ MonoBehaviour:
   m_PreserveMeshAssetOnDestroy: 0
   assetGuid: 
   m_Mesh: {fileID: 0}
-  m_VersionIndex: 2468
+  m_VersionIndex: 2477
   m_IsSelectable: 1
   m_SelectedFaces: 
   m_SelectedEdges: []
@@ -963,7 +994,7 @@ GameObject:
   - component: {fileID: 85111954682850586}
   - component: {fileID: 6555118511348656376}
   - component: {fileID: 5430390691242086787}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Long obstacle (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1197,7 +1228,7 @@ MonoBehaviour:
   m_PreserveMeshAssetOnDestroy: 0
   assetGuid: 
   m_Mesh: {fileID: 0}
-  m_VersionIndex: 310
+  m_VersionIndex: 319
   m_IsSelectable: 1
   m_SelectedFaces: 
   m_SelectedEdges: []
@@ -1279,7 +1310,7 @@ GameObject:
   - component: {fileID: 7329794155168851014}
   - component: {fileID: 3491713570201772056}
   - component: {fileID: 2420236178722522971}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Long obstacle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1513,7 +1544,7 @@ MonoBehaviour:
   m_PreserveMeshAssetOnDestroy: 0
   assetGuid: 
   m_Mesh: {fileID: 0}
-  m_VersionIndex: 198
+  m_VersionIndex: 207
   m_IsSelectable: 1
   m_SelectedFaces: 
   m_SelectedEdges: []
@@ -1595,7 +1626,7 @@ GameObject:
   - component: {fileID: 776922138301414185}
   - component: {fileID: 8150534549560391826}
   - component: {fileID: 571793489685894657}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Short obstacle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1829,7 +1860,7 @@ MonoBehaviour:
   m_PreserveMeshAssetOnDestroy: 0
   assetGuid: 
   m_Mesh: {fileID: 0}
-  m_VersionIndex: 68
+  m_VersionIndex: 77
   m_IsSelectable: 1
   m_SelectedFaces: 
   m_SelectedEdges: []
@@ -1911,7 +1942,7 @@ GameObject:
   - component: {fileID: 3437623352332821224}
   - component: {fileID: 2569146864306977989}
   - component: {fileID: 3909548222215462291}
-  - component: {fileID: 723139632}
+  - component: {fileID: 6175242793251070205}
   m_Layer: 0
   m_Name: Space C
   m_TagString: Untagged
@@ -1936,6 +1967,7 @@ Transform:
   - {fileID: 5045382623052471290}
   - {fileID: 6258709445404332743}
   - {fileID: 6599024465200058212}
+  - {fileID: 649497649}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2151,7 +2183,7 @@ MonoBehaviour:
   m_PreserveMeshAssetOnDestroy: 0
   assetGuid: 
   m_Mesh: {fileID: 0}
-  m_VersionIndex: 407
+  m_VersionIndex: 416
   m_IsSelectable: 1
   m_SelectedFaces: 
   m_SelectedEdges: []
@@ -2219,7 +2251,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2.391891, y: 2.78, z: 1}
   m_Center: {x: -0.19905564, y: 0.49999997, z: 0.5}
---- !u!114 &723139632
+--- !u!114 &6175242793251070205
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2228,16 +2260,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 6168304091831160108}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 648c85cdc3bedaa4f860d445ea2a61f0, type: 3}
+  m_Script: {fileID: 11500000, guid: 3ab6e606a32362441b873e92913e5c1d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SpawnLocation: {fileID: 649497649}
+  Parent: {fileID: 0}
   Sections:
   - {fileID: 9016343650560932395, guid: c5d60f9f2c9db654aa5d36f9f0fc1c6c, type: 3}
   - {fileID: 6632187188456915007, guid: 068c415c1de45be49b14b105d7825fb5, type: 3}
   - {fileID: 8795175431925886326, guid: 4a4d32b3c77e20a469e47f6aa5fcc94b, type: 3}
   - {fileID: 2493402855659000625, guid: dffef6553ed54444c9475adf8f5c00b7, type: 3}
-  Parent: {fileID: 0}
-  SectionSpawnDistance: 10.2
 --- !u!1 &7105858090371234305
 GameObject:
   m_ObjectHideFlags: 0
@@ -2251,7 +2283,7 @@ GameObject:
   - component: {fileID: 2248909929603672018}
   - component: {fileID: 4484311733489955546}
   - component: {fileID: 8219906607159484069}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Long obstacle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2485,7 +2517,7 @@ MonoBehaviour:
   m_PreserveMeshAssetOnDestroy: 0
   assetGuid: 
   m_Mesh: {fileID: 0}
-  m_VersionIndex: 195
+  m_VersionIndex: 204
   m_IsSelectable: 1
   m_SelectedFaces: 
   m_SelectedEdges: []
@@ -2567,7 +2599,7 @@ GameObject:
   - component: {fileID: 2516322700909988762}
   - component: {fileID: 6068673689837492896}
   - component: {fileID: 2892327514325852937}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: lane 4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2803,7 +2835,7 @@ MonoBehaviour:
   m_PreserveMeshAssetOnDestroy: 0
   assetGuid: 
   m_Mesh: {fileID: 0}
-  m_VersionIndex: 2465
+  m_VersionIndex: 2474
   m_IsSelectable: 1
   m_SelectedFaces: 
   m_SelectedEdges: []
@@ -2885,7 +2917,7 @@ GameObject:
   - component: {fileID: 8600709845556264047}
   - component: {fileID: 4210659082994948034}
   - component: {fileID: 3007745231700119430}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: lane 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3119,7 +3151,7 @@ MonoBehaviour:
   m_PreserveMeshAssetOnDestroy: 0
   assetGuid: 
   m_Mesh: {fileID: 0}
-  m_VersionIndex: 2459
+  m_VersionIndex: 2468
   m_IsSelectable: 1
   m_SelectedFaces: 
   m_SelectedEdges: []
@@ -3201,7 +3233,7 @@ GameObject:
   - component: {fileID: 7022645977938607762}
   - component: {fileID: 4974906967570159176}
   - component: {fileID: 3064556714096552564}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Long obstacle (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3435,7 +3467,7 @@ MonoBehaviour:
   m_PreserveMeshAssetOnDestroy: 0
   assetGuid: 
   m_Mesh: {fileID: 0}
-  m_VersionIndex: 183
+  m_VersionIndex: 192
   m_IsSelectable: 1
   m_SelectedFaces: 
   m_SelectedEdges: []
@@ -3517,7 +3549,7 @@ GameObject:
   - component: {fileID: 811759288643750956}
   - component: {fileID: 1185073345344347323}
   - component: {fileID: 5965452449893195900}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Long obstacle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3751,7 +3783,7 @@ MonoBehaviour:
   m_PreserveMeshAssetOnDestroy: 0
   assetGuid: 
   m_Mesh: {fileID: 0}
-  m_VersionIndex: 133
+  m_VersionIndex: 142
   m_IsSelectable: 1
   m_SelectedFaces: 
   m_SelectedEdges: []
@@ -3833,7 +3865,7 @@ GameObject:
   - component: {fileID: 7948837808221098151}
   - component: {fileID: 8944637412894081181}
   - component: {fileID: 713903333108044158}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: lane 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4070,7 +4102,7 @@ MonoBehaviour:
   m_PreserveMeshAssetOnDestroy: 0
   assetGuid: 
   m_Mesh: {fileID: 0}
-  m_VersionIndex: 2462
+  m_VersionIndex: 2471
   m_IsSelectable: 1
   m_SelectedFaces: 
   m_SelectedEdges: []
