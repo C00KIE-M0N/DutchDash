@@ -7,6 +7,13 @@ public class ScoreSystem : MonoBehaviour
 {
     public float ScoreMod;
 
+    public static ScoreSystem instance;
+
+    private void Awake()
+    {
+        instance = this;
+    }
+
     [SerializeField] private float m_totalScore;
     [SerializeField] private Text score_text;
 
