@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PlayerController2 : MonoBehaviour
 {
+    [SerializeField] private LayerMask layerMask;
     [SerializeField] private Transform Player;
     [SerializeField] private float thrust = 20;
     [SerializeField] private float journyTime;
@@ -98,15 +99,8 @@ public class PlayerController2 : MonoBehaviour
             }
         }
 
-        if (Input.GetKeyDown(KeyCode.Space) && GroundHit)
-        {
-            m_RigidBody.AddForce(transform.up * thrust);
-            GroundHit = false;
-        }
+        
     }
 
-    public void UpdatePlayer()
-    {
-        Player.position = Lanes[LaneNumber].position;
-    }
+   
 }
