@@ -10,6 +10,8 @@ public class PlayerController2 : MonoBehaviour
     [SerializeField] private int LaneNumber;
     private Rigidbody m_RigidBody;
 
+    int layerMask = 1 << 8;
+
     public bool GroundHit;
 
     public Transform[] Lanes;
@@ -35,22 +37,30 @@ public class PlayerController2 : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.D) || Input.GetKeyDown(KeyCode.RightArrow))
+        RaycastHit hit;
+        // Does the ray intersect any objects excluding the player layer
+        if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.left), out hit, Mathf.Infinity, layerMask))
         {
-            if (LaneNumber < Lanes.Length)
-            {
-                LaneNumber += 1;
-                UpdatePlayer();
-            }
+            Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.left) * hit.distance, Color.green);
+
+        }
+        else
+        {
+            Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.left) * 1, Color.red);
+            Debug.Log("Did not Hit");
+            PlayerMovementA();
         }
 
-        if (Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.LeftArrow))
+        if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.right), out hit, Mathf.Infinity, layerMask))
         {
-            if (LaneNumber > 0)
-            {
-                LaneNumber -= 1;
-                UpdatePlayer();
-            }
+            Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.right) * hit.distance, Color.green);
+
+        }
+        else
+        {
+            Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.right) * 1, Color.red);
+            Debug.Log("Did not Hit");
+            PlayerMovementD();
         }
 
         if (Input.GetKeyDown(KeyCode.Space) && GroundHit)
@@ -63,5 +73,32 @@ public class PlayerController2 : MonoBehaviour
     public void UpdatePlayer()
     {
         Player.position = Lanes[LaneNumber].position;
+    }
+
+    public void PlayerMovementA()
+    {
+
+        if (Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.LeftArrow))
+        {
+            if (LaneNumber > 0)
+            {
+                LaneNumber -= 1;
+                UpdatePlayer();
+            }
+        }
+       
+    }
+
+    public void PlayerMovementD()
+    {
+        if (Input.GetKeyDown(KeyCode.D) || Input.GetKeyDown(KeyCode.RightArrow))
+        {
+            if (LaneNumber < Lanes.Length)
+            {
+                LaneNumber += 1;
+                UpdatePlayer();
+            }
+        }
+
     }
 }
