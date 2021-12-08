@@ -5,14 +5,17 @@ using UnityEngine.SceneManagement;
 
 public class death : MonoBehaviour
 {
-    public GameObject DeathPanel;
+    private void Start()
+    {
+        //DeathPanel = FindObjectOfType<ReferenceTest>(true);
+    }
 
     private void OnTriggerEnter(Collider Other)
     {
         if (Other.CompareTag("Player"))
         {
             Time.timeScale = 0f;
-            DeathPanel.SetActive(true);
+            //DeathPanel.gameObject.SetActive(true);
         }
     }
 

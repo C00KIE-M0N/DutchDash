@@ -11,7 +11,7 @@ public class PlayerController2 : MonoBehaviour
     [SerializeField] private int LaneNumber;
     private Rigidbody m_RigidBody;
 
-    int layerMask = 1 << 8;
+    int LayerMask = 1 << 8;
 
     public bool GroundHit;
 
