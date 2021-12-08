@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PlayerController2 : MonoBehaviour
 {
+    [SerializeField] private LayerMask layerMask;
     [SerializeField] private Transform Player;
     [SerializeField] private float thrust = 20;
     [SerializeField] private float journyTime;
@@ -42,7 +43,6 @@ public class PlayerController2 : MonoBehaviour
         if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.left), out hit, Mathf.Infinity, layerMask))
         {
             Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.left) * hit.distance, Color.green);
-
         }
         else
         {
@@ -54,7 +54,6 @@ public class PlayerController2 : MonoBehaviour
         if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.right), out hit, Mathf.Infinity, layerMask))
         {
             Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.right) * hit.distance, Color.green);
-
         }
         else
         {
@@ -77,7 +76,6 @@ public class PlayerController2 : MonoBehaviour
 
     public void PlayerMovementA()
     {
-
         if (Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.LeftArrow))
         {
             if (LaneNumber > 0)
@@ -86,19 +84,17 @@ public class PlayerController2 : MonoBehaviour
                 UpdatePlayer();
             }
         }
-       
     }
 
     public void PlayerMovementD()
     {
         if (Input.GetKeyDown(KeyCode.D) || Input.GetKeyDown(KeyCode.RightArrow))
         {
-            if (LaneNumber < Lanes.Length)
+            if (LaneNumber < Lanes.Length - 1)
             {
                 LaneNumber += 1;
                 UpdatePlayer();
             }
         }
-
     }
 }
