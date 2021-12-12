@@ -129,7 +129,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-4520
+  m_Name: pb_Mesh26446
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -1472,7 +1472,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-4514
+  m_Name: pb_Mesh26294
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -2027,7 +2027,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 52fa0be5477a2af40b3729f47d6352e7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DeathPanel: {fileID: 2015840242}
 --- !u!65 &266500007
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2053,10 +2052,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fdd2745aa7359d54db0c4f6024f11821, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  layerMask:
+    serializedVersion: 2
+    m_Bits: 0
   Player: {fileID: 266500004}
   thrust: 20
   journyTime: 1e+16
   LaneNumber: 0
+  RayCastSize: 0.5
   GroundHit: 0
   Lanes:
   - {fileID: 442275693}
@@ -5333,7 +5336,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-4512
+  m_Name: pb_Mesh26232
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -9227,7 +9230,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-4516
+  m_Name: pb_Mesh26186
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -10700,7 +10703,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-4510
+  m_Name: pb_Mesh26504
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -11272,7 +11275,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-4518
+  m_Name: pb_Mesh26208
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -11910,6 +11913,27 @@ MonoBehaviour:
   m_SelectedFaces: 
   m_SelectedEdges: []
   m_SelectedVertices: 
+--- !u!1 &1929642106 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1107844797920973453, guid: 3fd3589996d44f64998ad189850dfae6, type: 3}
+  m_PrefabInstance: {fileID: 266500001}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1929642107
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1929642106}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7bc527fe8359ea84c87385907b48fd5e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ScoreMod: 1
+  m_coins: 0
+  m_totalScore: 0
+  score_text: {fileID: 1253326822}
 --- !u!1 &1935841072
 GameObject:
   m_ObjectHideFlags: 0
@@ -12744,7 +12768,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a20a9660ca9cf24c94e8bd7c8e2768f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  StartPanel: {fileID: 1121262572}
 --- !u!4 &2020062501
 Transform:
   m_ObjectHideFlags: 0

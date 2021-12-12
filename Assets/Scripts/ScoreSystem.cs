@@ -9,6 +9,8 @@ public class ScoreSystem : MonoBehaviour
 
     public static ScoreSystem instance;
 
+    public float m_coins;
+
     private void Awake()
     {
         instance = this;
@@ -27,10 +29,10 @@ public class ScoreSystem : MonoBehaviour
 
     private void Update()
     {
-        CalculateDistance();
+        CalculateDistance(m_coins);
     }
 
-    private void CalculateDistance()
+    private void CalculateDistance(float _coins)
     {
         Vector3 _distancevector = transform.position - m_oldPosisition;
         float _distancetravelledthisframe = _distancevector.magnitude;
@@ -38,8 +40,16 @@ public class ScoreSystem : MonoBehaviour
         m_totalDistance += _distancetravelledthisframe;
         m_oldPosisition = transform.position;
 
-        m_totalScore = m_totalDistance * ScoreMod;
+        m_totalScore = m_totalDistance * ScoreMod * (1 + _coins);
         m_totalScore = Mathf.RoundToInt(m_totalScore);
         score_text.text = m_totalScore.ToString();
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.CompareTag("Coin"))
+        {
+            m_coins++;
+        }
     }
 }
