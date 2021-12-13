@@ -42,4 +42,15 @@ public class ScoreSystem : MonoBehaviour
         m_totalScore = Mathf.RoundToInt(m_totalScore);
         score_text.text = m_totalScore.ToString();
     }
+
+    private void OnDestroy()
+    {
+        SaveScore();
+    }
+
+    private void SaveScore()
+    {
+        PlayerPrefs.SetInt("Score", Mathf.RoundToInt(m_totalScore));
+        PlayerPrefs.Save();
+    }
 }
