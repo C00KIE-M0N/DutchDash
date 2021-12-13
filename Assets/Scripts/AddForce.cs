@@ -6,6 +6,7 @@ public class AddForce : MonoBehaviour
 {
     [SerializeField] private Rigidbody rb;
     [SerializeField] private float speed;
+    [SerializeField] private float maxSpeed;
 
     // Start is called before the first frame update
     private void Start()
@@ -16,6 +17,11 @@ public class AddForce : MonoBehaviour
     private void Update()
     {
         rb.AddForce(transform.forward * speed * 2 * Time.deltaTime / 4);
+
+        if (rb.velocity.magnitude > maxSpeed)
+        {
+            rb.velocity = rb.velocity.normalized * maxSpeed;
+        }
     }
 
     //private void OnTriggerEnter(Collider Other)
