@@ -57,10 +57,15 @@ public class ScoreSystem : MonoBehaviour
     {
         SaveScore();
     }
+        private void OnDestroy()
+        {
+            SaveScore();
+        }
 
-    private void SaveScore()
-    {
-        PlayerPrefs.SetInt("Score", Mathf.RoundToInt(m_totalScore));
-        PlayerPrefs.Save();
-    }
-}
+
+        private void SaveScore()
+        {
+            PlayerPrefs.SetInt("Score", Mathf.RoundToInt(m_totalScore));
+            PlayerPrefs.Save();
+       }
+} 
