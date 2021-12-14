@@ -51,5 +51,14 @@ public class ScoreSystem : MonoBehaviour
         {
             m_coins++;
         }
+    private void OnDestroy()
+    {
+        SaveScore();
+    }
+
+    private void SaveScore()
+    {
+        PlayerPrefs.SetInt("Score", Mathf.RoundToInt(m_totalScore));
+        PlayerPrefs.Save();
     }
 }

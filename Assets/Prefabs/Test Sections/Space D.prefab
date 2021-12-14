@@ -3864,6 +3864,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2434496710155392944}
     m_Modifications:
+    - target: {fileID: 598652001743363211, guid: b6d05d904a0bd4d4a8512cde359cef9f, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 13400000, guid: 93e151b0bfc433445978ab28867182ab, type: 2}
     - target: {fileID: 3859828449872299773, guid: b6d05d904a0bd4d4a8512cde359cef9f, type: 3}
       propertyPath: m_Name
       value: Koe (1)
@@ -3930,6 +3934,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5077298832331957227}
     m_Modifications:
+    - target: {fileID: -901605999143927453, guid: 4eef7a51dc933e04cbcecfe440027e44, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 13400000, guid: 93e151b0bfc433445978ab28867182ab, type: 2}
     - target: {fileID: 3954186091537832791, guid: 4eef7a51dc933e04cbcecfe440027e44, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -4000,6 +4008,10 @@ PrefabInstance:
       propertyPath: m_Convex
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 598652001743363211, guid: b6d05d904a0bd4d4a8512cde359cef9f, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 13400000, guid: 93e151b0bfc433445978ab28867182ab, type: 2}
     - target: {fileID: 3859828449872299773, guid: b6d05d904a0bd4d4a8512cde359cef9f, type: 3}
       propertyPath: m_Name
       value: Koe
@@ -4066,6 +4078,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2158913861451748310}
     m_Modifications:
+    - target: {fileID: -1413583431890983611, guid: 45842ea72d2835c4eae716d9f5e68b7e, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 13400000, guid: 93e151b0bfc433445978ab28867182ab, type: 2}
     - target: {fileID: 5818194664798472463, guid: 45842ea72d2835c4eae716d9f5e68b7e, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -4132,6 +4148,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2158913861451748310}
     m_Modifications:
+    - target: {fileID: -1413583431890983611, guid: 45842ea72d2835c4eae716d9f5e68b7e, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 13400000, guid: 93e151b0bfc433445978ab28867182ab, type: 2}
     - target: {fileID: 5818194664798472463, guid: 45842ea72d2835c4eae716d9f5e68b7e, type: 3}
       propertyPath: m_RootOrder
       value: 2
