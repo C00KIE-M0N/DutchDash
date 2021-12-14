@@ -5,7 +5,6 @@ using UnityEngine.SceneManagement;
 
 public class death : MonoBehaviour
 {
-
     public GameObject panel;
     private void Start()
     {
@@ -17,8 +16,9 @@ public class death : MonoBehaviour
         if (Other.CompareTag("Player"))
         {
             Time.timeScale = 0f;
-            //panel.gameObject.SetActive(true);
-            SceneManager.LoadScene(2);
+            panel.gameObject.SetActive(true);
+
+
         }
     }
 

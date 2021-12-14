@@ -50,15 +50,17 @@ public class ScoreSystem : MonoBehaviour
         if (other.gameObject.CompareTag("Coin"))
         {
             m_coins++;
+        } 
+    }
+        private void OnDestroy()
+        {
+            SaveScore();
         }
-    private void OnDestroy()
-    {
-        SaveScore();
-    }
 
-    private void SaveScore()
-    {
-        PlayerPrefs.SetInt("Score", Mathf.RoundToInt(m_totalScore));
-        PlayerPrefs.Save();
-    }
-}
+
+        private void SaveScore()
+        {
+            PlayerPrefs.SetInt("Score", Mathf.RoundToInt(m_totalScore));
+            PlayerPrefs.Save();
+       }
+} 
