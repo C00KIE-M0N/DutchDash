@@ -18,6 +18,8 @@ public class PickupSpawner : MonoBehaviour
             {
                 //spawn coin(s)
                 Instantiate(Pickups[0].gameObject, PossibleSpawnPoints[i].position, Quaternion.LookRotation(Vector3.forward));
+                Instantiate(Pickups[0].gameObject, new Vector3(PossibleSpawnPoints[i].position.x - 1, PossibleSpawnPoints[i].position.y, PossibleSpawnPoints[i].position.z), Quaternion.LookRotation(Vector3.forward));
+                Instantiate(Pickups[0].gameObject, new Vector3(PossibleSpawnPoints[i].position.x - 2, PossibleSpawnPoints[i].position.y, PossibleSpawnPoints[i].position.z), Quaternion.LookRotation(Vector3.forward));
             }
             else if (chanceroll > 35 && chanceroll <= 55)
             {

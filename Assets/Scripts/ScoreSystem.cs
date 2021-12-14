@@ -51,6 +51,8 @@ public class ScoreSystem : MonoBehaviour
         {
             m_coins++;
         }
+    }
+
     private void OnDestroy()
     {
         SaveScore();
