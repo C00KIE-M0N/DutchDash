@@ -63,7 +63,7 @@ public class PlayerController2 : MonoBehaviour
             PlayerMovementD();
         }
 
-        if (Input.GetKeyDown(KeyCode.Space) && GroundHit)
+        if (Input.GetKeyDown(KeyCode.Space) && GroundHit || Input.GetKeyDown(KeyCode.UpArrow) && GroundHit)
         {
             m_RigidBody.AddForce(transform.up * thrust);
             GroundHit = false;
@@ -72,7 +72,8 @@ public class PlayerController2 : MonoBehaviour
 
     public void UpdatePlayer()
     {
-        Player.position = Lanes[LaneNumber].position;
+        //Player.position = Lanes[LaneNumber].position;
+        Player.position = new Vector3(Player.position.x, Player.position.y, Lanes[LaneNumber].position.z);
     }
 
     public void PlayerMovementA()
