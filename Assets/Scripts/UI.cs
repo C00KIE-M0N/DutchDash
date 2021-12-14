@@ -14,4 +14,10 @@ public class UI : MonoBehaviour
     {
         Application.Quit();
     }
+
+    public void Restart()
+    {
+        SceneManager.LoadScene(0);
+        Time.timeScale = 1f;
+    }
 }

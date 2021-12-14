@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/RealGame/CompleteGame.unity
     guid: 3da45db1a5ca3d64f8dbfb9120992f27
+  - enabled: 1
+    path: Assets/Scenes/CelineTest.unity
+    guid: 8f699ae0e40f95d4e9ee53b3799557d6
   m_configObjects: {}

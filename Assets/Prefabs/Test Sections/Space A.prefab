@@ -3545,10 +3545,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 851076786490984649}
     m_Modifications:
-    - target: {fileID: -901605999143927453, guid: 4eef7a51dc933e04cbcecfe440027e44, type: 3}
-      propertyPath: m_Material
-      value: 
-      objectReference: {fileID: 13400000, guid: 93e151b0bfc433445978ab28867182ab, type: 2}
     - target: {fileID: 3954186091537832791, guid: 4eef7a51dc933e04cbcecfe440027e44, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -3615,10 +3611,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 6546824129685825168}
     m_Modifications:
-    - target: {fileID: 598652001743363211, guid: b6d05d904a0bd4d4a8512cde359cef9f, type: 3}
-      propertyPath: m_Material
-      value: 
-      objectReference: {fileID: 13400000, guid: 93e151b0bfc433445978ab28867182ab, type: 2}
     - target: {fileID: 3859828449872299773, guid: b6d05d904a0bd4d4a8512cde359cef9f, type: 3}
       propertyPath: m_Name
       value: Koe
