@@ -285,7 +285,7 @@ MonoBehaviour:
   m_PreserveMeshAssetOnDestroy: 0
   assetGuid: 
   m_Mesh: {fileID: 0}
-  m_VersionIndex: 413
+  m_VersionIndex: 419
   m_IsSelectable: 1
   m_SelectedFaces: 
   m_SelectedEdges: []
@@ -617,7 +617,7 @@ MonoBehaviour:
   m_PreserveMeshAssetOnDestroy: 0
   assetGuid: 
   m_Mesh: {fileID: 0}
-  m_VersionIndex: 2465
+  m_VersionIndex: 2471
   m_IsSelectable: 1
   m_SelectedFaces: 
   m_SelectedEdges: []
@@ -933,7 +933,7 @@ MonoBehaviour:
   m_PreserveMeshAssetOnDestroy: 0
   assetGuid: 
   m_Mesh: {fileID: 0}
-  m_VersionIndex: 83
+  m_VersionIndex: 86
   m_IsSelectable: 1
   m_SelectedFaces: 
   m_SelectedEdges: []
@@ -1253,7 +1253,7 @@ MonoBehaviour:
   m_PreserveMeshAssetOnDestroy: 0
   assetGuid: 
   m_Mesh: {fileID: 0}
-  m_VersionIndex: 2471
+  m_VersionIndex: 2477
   m_IsSelectable: 1
   m_SelectedFaces: 
   m_SelectedEdges: []
@@ -1569,7 +1569,7 @@ MonoBehaviour:
   m_PreserveMeshAssetOnDestroy: 0
   assetGuid: 
   m_Mesh: {fileID: 0}
-  m_VersionIndex: 80
+  m_VersionIndex: 83
   m_IsSelectable: 1
   m_SelectedFaces: 
   m_SelectedEdges: []
@@ -1887,7 +1887,7 @@ MonoBehaviour:
   m_PreserveMeshAssetOnDestroy: 0
   assetGuid: 
   m_Mesh: {fileID: 0}
-  m_VersionIndex: 2468
+  m_VersionIndex: 2477
   m_IsSelectable: 1
   m_SelectedFaces: 
   m_SelectedEdges: []
@@ -2203,7 +2203,7 @@ MonoBehaviour:
   m_PreserveMeshAssetOnDestroy: 0
   assetGuid: 
   m_Mesh: {fileID: 0}
-  m_VersionIndex: 86
+  m_VersionIndex: 89
   m_IsSelectable: 1
   m_SelectedFaces: 
   m_SelectedEdges: []
@@ -2519,7 +2519,7 @@ MonoBehaviour:
   m_PreserveMeshAssetOnDestroy: 0
   assetGuid: 
   m_Mesh: {fileID: 0}
-  m_VersionIndex: 86
+  m_VersionIndex: 89
   m_IsSelectable: 1
   m_SelectedFaces: 
   m_SelectedEdges: []
@@ -2835,7 +2835,7 @@ MonoBehaviour:
   m_PreserveMeshAssetOnDestroy: 0
   assetGuid: 
   m_Mesh: {fileID: 0}
-  m_VersionIndex: 77
+  m_VersionIndex: 80
   m_IsSelectable: 1
   m_SelectedFaces: 
   m_SelectedEdges: []
@@ -3153,7 +3153,7 @@ MonoBehaviour:
   m_PreserveMeshAssetOnDestroy: 0
   assetGuid: 
   m_Mesh: {fileID: 0}
-  m_VersionIndex: 2474
+  m_VersionIndex: 2480
   m_IsSelectable: 1
   m_SelectedFaces: 
   m_SelectedEdges: []
@@ -3473,7 +3473,7 @@ MonoBehaviour:
   m_PreserveMeshAssetOnDestroy: 0
   assetGuid: 
   m_Mesh: {fileID: 0}
-  m_VersionIndex: 2468
+  m_VersionIndex: 2474
   m_IsSelectable: 1
   m_SelectedFaces: 
   m_SelectedEdges: []
@@ -3789,7 +3789,7 @@ MonoBehaviour:
   m_PreserveMeshAssetOnDestroy: 0
   assetGuid: 
   m_Mesh: {fileID: 0}
-  m_VersionIndex: 346
+  m_VersionIndex: 349
   m_IsSelectable: 1
   m_SelectedFaces: 
   m_SelectedEdges: []
@@ -3865,6 +3865,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8106086718320161298}
     m_Modifications:
+    - target: {fileID: -1413583431890983611, guid: 45842ea72d2835c4eae716d9f5e68b7e, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 13400000, guid: 93e151b0bfc433445978ab28867182ab, type: 2}
     - target: {fileID: 5818194664798472463, guid: 45842ea72d2835c4eae716d9f5e68b7e, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -3913,6 +3917,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Hooibaal_Model
       objectReference: {fileID: 0}
+    - target: {fileID: 6626397676761158581, guid: 45842ea72d2835c4eae716d9f5e68b7e, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 45842ea72d2835c4eae716d9f5e68b7e, type: 3}
 --- !u!4 &6701054534607972085 stripped
@@ -3927,6 +3935,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1244970340318478819}
     m_Modifications:
+    - target: {fileID: -1413583431890983611, guid: 45842ea72d2835c4eae716d9f5e68b7e, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 13400000, guid: 93e151b0bfc433445978ab28867182ab, type: 2}
     - target: {fileID: 5818194664798472463, guid: 45842ea72d2835c4eae716d9f5e68b7e, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -3975,6 +3987,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Hooibaal_Model (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 6626397676761158581, guid: 45842ea72d2835c4eae716d9f5e68b7e, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 45842ea72d2835c4eae716d9f5e68b7e, type: 3}
 --- !u!4 &4929574114549023864 stripped
@@ -3989,6 +4005,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1833371424211395732}
     m_Modifications:
+    - target: {fileID: -1413583431890983611, guid: 45842ea72d2835c4eae716d9f5e68b7e, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 13400000, guid: 93e151b0bfc433445978ab28867182ab, type: 2}
     - target: {fileID: 5818194664798472463, guid: 45842ea72d2835c4eae716d9f5e68b7e, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -4037,6 +4057,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Hooibaal_Model (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 6626397676761158581, guid: 45842ea72d2835c4eae716d9f5e68b7e, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 45842ea72d2835c4eae716d9f5e68b7e, type: 3}
 --- !u!4 &5645228353417470073 stripped
@@ -4051,6 +4075,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1760347017001850219}
     m_Modifications:
+    - target: {fileID: -1413583431890983611, guid: 45842ea72d2835c4eae716d9f5e68b7e, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 13400000, guid: 93e151b0bfc433445978ab28867182ab, type: 2}
     - target: {fileID: 5818194664798472463, guid: 45842ea72d2835c4eae716d9f5e68b7e, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -4099,6 +4127,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Hooibaal_Model (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 6626397676761158581, guid: 45842ea72d2835c4eae716d9f5e68b7e, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 45842ea72d2835c4eae716d9f5e68b7e, type: 3}
 --- !u!4 &9074448741638217201 stripped
@@ -4113,6 +4145,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1833371424211395732}
     m_Modifications:
+    - target: {fileID: -1413583431890983611, guid: 45842ea72d2835c4eae716d9f5e68b7e, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 13400000, guid: 93e151b0bfc433445978ab28867182ab, type: 2}
     - target: {fileID: 5818194664798472463, guid: 45842ea72d2835c4eae716d9f5e68b7e, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -4160,6 +4196,10 @@ PrefabInstance:
     - target: {fileID: 6626397676761158581, guid: 45842ea72d2835c4eae716d9f5e68b7e, type: 3}
       propertyPath: m_Name
       value: Hooibaal_Model
+      objectReference: {fileID: 0}
+    - target: {fileID: 6626397676761158581, guid: 45842ea72d2835c4eae716d9f5e68b7e, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 45842ea72d2835c4eae716d9f5e68b7e, type: 3}
@@ -4222,6 +4262,10 @@ PrefabInstance:
     - target: {fileID: 6626397676761158581, guid: 45842ea72d2835c4eae716d9f5e68b7e, type: 3}
       propertyPath: m_Name
       value: Hooibaal_Model
+      objectReference: {fileID: 0}
+    - target: {fileID: 6626397676761158581, guid: 45842ea72d2835c4eae716d9f5e68b7e, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 45842ea72d2835c4eae716d9f5e68b7e, type: 3}

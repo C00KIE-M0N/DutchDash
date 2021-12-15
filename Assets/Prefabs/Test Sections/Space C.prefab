@@ -279,7 +279,7 @@ MonoBehaviour:
   m_PreserveMeshAssetOnDestroy: 0
   assetGuid: 
   m_Mesh: {fileID: 0}
-  m_VersionIndex: 2471
+  m_VersionIndex: 2477
   m_IsSelectable: 1
   m_SelectedFaces: 
   m_SelectedEdges: []
@@ -595,7 +595,7 @@ MonoBehaviour:
   m_PreserveMeshAssetOnDestroy: 0
   assetGuid: 
   m_Mesh: {fileID: 0}
-  m_VersionIndex: 189
+  m_VersionIndex: 192
   m_IsSelectable: 1
   m_SelectedFaces: 
   m_SelectedEdges: []
@@ -913,7 +913,7 @@ MonoBehaviour:
   m_PreserveMeshAssetOnDestroy: 0
   assetGuid: 
   m_Mesh: {fileID: 0}
-  m_VersionIndex: 2477
+  m_VersionIndex: 2483
   m_IsSelectable: 1
   m_SelectedFaces: 
   m_SelectedEdges: []
@@ -995,7 +995,7 @@ GameObject:
   - component: {fileID: 85111954682850586}
   - component: {fileID: 6555118511348656376}
   - component: {fileID: 5430390691242086787}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Long obstacle (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1229,7 +1229,7 @@ MonoBehaviour:
   m_PreserveMeshAssetOnDestroy: 0
   assetGuid: 
   m_Mesh: {fileID: 0}
-  m_VersionIndex: 319
+  m_VersionIndex: 325
   m_IsSelectable: 1
   m_SelectedFaces: 
   m_SelectedEdges: []
@@ -1545,7 +1545,7 @@ MonoBehaviour:
   m_PreserveMeshAssetOnDestroy: 0
   assetGuid: 
   m_Mesh: {fileID: 0}
-  m_VersionIndex: 207
+  m_VersionIndex: 210
   m_IsSelectable: 1
   m_SelectedFaces: 
   m_SelectedEdges: []
@@ -1861,7 +1861,7 @@ MonoBehaviour:
   m_PreserveMeshAssetOnDestroy: 0
   assetGuid: 
   m_Mesh: {fileID: 0}
-  m_VersionIndex: 77
+  m_VersionIndex: 80
   m_IsSelectable: 1
   m_SelectedFaces: 
   m_SelectedEdges: []
@@ -2184,7 +2184,7 @@ MonoBehaviour:
   m_PreserveMeshAssetOnDestroy: 0
   assetGuid: 
   m_Mesh: {fileID: 0}
-  m_VersionIndex: 416
+  m_VersionIndex: 422
   m_IsSelectable: 1
   m_SelectedFaces: 
   m_SelectedEdges: []
@@ -2518,7 +2518,7 @@ MonoBehaviour:
   m_PreserveMeshAssetOnDestroy: 0
   assetGuid: 
   m_Mesh: {fileID: 0}
-  m_VersionIndex: 204
+  m_VersionIndex: 207
   m_IsSelectable: 1
   m_SelectedFaces: 
   m_SelectedEdges: []
@@ -2838,7 +2838,7 @@ MonoBehaviour:
   m_PreserveMeshAssetOnDestroy: 0
   assetGuid: 
   m_Mesh: {fileID: 0}
-  m_VersionIndex: 2474
+  m_VersionIndex: 2480
   m_IsSelectable: 1
   m_SelectedFaces: 
   m_SelectedEdges: []
@@ -3154,7 +3154,7 @@ MonoBehaviour:
   m_PreserveMeshAssetOnDestroy: 0
   assetGuid: 
   m_Mesh: {fileID: 0}
-  m_VersionIndex: 2468
+  m_VersionIndex: 2474
   m_IsSelectable: 1
   m_SelectedFaces: 
   m_SelectedEdges: []
@@ -3470,7 +3470,7 @@ MonoBehaviour:
   m_PreserveMeshAssetOnDestroy: 0
   assetGuid: 
   m_Mesh: {fileID: 0}
-  m_VersionIndex: 192
+  m_VersionIndex: 195
   m_IsSelectable: 1
   m_SelectedFaces: 
   m_SelectedEdges: []
@@ -3786,7 +3786,7 @@ MonoBehaviour:
   m_PreserveMeshAssetOnDestroy: 0
   assetGuid: 
   m_Mesh: {fileID: 0}
-  m_VersionIndex: 142
+  m_VersionIndex: 148
   m_IsSelectable: 1
   m_SelectedFaces: 
   m_SelectedEdges: []
@@ -4108,7 +4108,7 @@ MonoBehaviour:
   m_PreserveMeshAssetOnDestroy: 0
   assetGuid: 
   m_Mesh: {fileID: 0}
-  m_VersionIndex: 2471
+  m_VersionIndex: 2477
   m_IsSelectable: 1
   m_SelectedFaces: 
   m_SelectedEdges: []
@@ -4184,9 +4184,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 6599024465200058212}
     m_Modifications:
+    - target: {fileID: 598652001743363211, guid: b6d05d904a0bd4d4a8512cde359cef9f, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 13400000, guid: 93e151b0bfc433445978ab28867182ab, type: 2}
     - target: {fileID: 3859828449872299773, guid: b6d05d904a0bd4d4a8512cde359cef9f, type: 3}
       propertyPath: m_Name
       value: Koe (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3859828449872299773, guid: b6d05d904a0bd4d4a8512cde359cef9f, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 4529228328487722055, guid: b6d05d904a0bd4d4a8512cde359cef9f, type: 3}
       propertyPath: m_RootOrder
@@ -4246,9 +4254,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 6258709445404332743}
     m_Modifications:
+    - target: {fileID: 598652001743363211, guid: b6d05d904a0bd4d4a8512cde359cef9f, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 13400000, guid: 93e151b0bfc433445978ab28867182ab, type: 2}
     - target: {fileID: 3859828449872299773, guid: b6d05d904a0bd4d4a8512cde359cef9f, type: 3}
       propertyPath: m_Name
       value: Koe
+      objectReference: {fileID: 0}
+    - target: {fileID: 3859828449872299773, guid: b6d05d904a0bd4d4a8512cde359cef9f, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 4529228328487722055, guid: b6d05d904a0bd4d4a8512cde359cef9f, type: 3}
       propertyPath: m_RootOrder
@@ -4308,6 +4324,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5045382623052471290}
     m_Modifications:
+    - target: {fileID: -1413583431890983611, guid: 45842ea72d2835c4eae716d9f5e68b7e, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 13400000, guid: 93e151b0bfc433445978ab28867182ab, type: 2}
     - target: {fileID: 5818194664798472463, guid: 45842ea72d2835c4eae716d9f5e68b7e, type: 3}
       propertyPath: m_RootOrder
       value: 5
@@ -4356,6 +4376,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Hooibaal_Model (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 6626397676761158581, guid: 45842ea72d2835c4eae716d9f5e68b7e, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 45842ea72d2835c4eae716d9f5e68b7e, type: 3}
 --- !u!4 &165229870905799692 stripped
@@ -4370,6 +4394,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 6258709445404332743}
     m_Modifications:
+    - target: {fileID: -901605999143927453, guid: 4eef7a51dc933e04cbcecfe440027e44, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 13400000, guid: 93e151b0bfc433445978ab28867182ab, type: 2}
     - target: {fileID: 3954186091537832791, guid: 4eef7a51dc933e04cbcecfe440027e44, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -4418,6 +4446,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Hekje_Model2
       objectReference: {fileID: 0}
+    - target: {fileID: 4443865223481737709, guid: 4eef7a51dc933e04cbcecfe440027e44, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4eef7a51dc933e04cbcecfe440027e44, type: 3}
 --- !u!4 &6998658070112770764 stripped
@@ -4432,6 +4464,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5045382623052471290}
     m_Modifications:
+    - target: {fileID: -1413583431890983611, guid: 45842ea72d2835c4eae716d9f5e68b7e, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 13400000, guid: 93e151b0bfc433445978ab28867182ab, type: 2}
     - target: {fileID: 5818194664798472463, guid: 45842ea72d2835c4eae716d9f5e68b7e, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -4480,6 +4516,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Hooibaal_Model (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 6626397676761158581, guid: 45842ea72d2835c4eae716d9f5e68b7e, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 45842ea72d2835c4eae716d9f5e68b7e, type: 3}
 --- !u!4 &2783404908939454252 stripped
@@ -4494,6 +4534,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5045382623052471290}
     m_Modifications:
+    - target: {fileID: -1413583431890983611, guid: 45842ea72d2835c4eae716d9f5e68b7e, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 13400000, guid: 93e151b0bfc433445978ab28867182ab, type: 2}
     - target: {fileID: 5818194664798472463, guid: 45842ea72d2835c4eae716d9f5e68b7e, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -4541,6 +4585,10 @@ PrefabInstance:
     - target: {fileID: 6626397676761158581, guid: 45842ea72d2835c4eae716d9f5e68b7e, type: 3}
       propertyPath: m_Name
       value: Hooibaal_Model
+      objectReference: {fileID: 0}
+    - target: {fileID: 6626397676761158581, guid: 45842ea72d2835c4eae716d9f5e68b7e, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 45842ea72d2835c4eae716d9f5e68b7e, type: 3}
