@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 5786929295778716952}
   - component: {fileID: 8623191251184904658}
   - component: {fileID: -6926770272715643263}
+  - component: {fileID: -1672082142066821609}
   m_Layer: 0
   m_Name: Dropmunt_model
   m_TagString: Coin
@@ -96,3 +97,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d98c0af5bc799b4fb4a05adb10665c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!64 &-1672082142066821609
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7830430104941381639}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -22408149455797208, guid: b00ab7b5897df4d4ea474bfe5d3a50cc, type: 3}
