@@ -12,9 +12,9 @@ GameObject:
   - component: {fileID: 94519352126608626}
   - component: {fileID: 2786386286233575480}
   - component: {fileID: -901605999143927453}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Hekje_Model2
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -91,7 +91,7 @@ MeshCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4443865223481737709}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: 93e151b0bfc433445978ab28867182ab, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4

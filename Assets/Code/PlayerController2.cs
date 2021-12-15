@@ -9,7 +9,10 @@ public class PlayerController2 : MonoBehaviour
     [SerializeField] private float thrust = 20;
     [SerializeField] private float journyTime;
     [SerializeField] private int LaneNumber;
+    [SerializeField] private float RayCastSize = 0.5f;
     private Rigidbody m_RigidBody;
+
+    int LayerMask = 1 << 8;
 
     public bool GroundHit;
 
@@ -38,18 +41,18 @@ public class PlayerController2 : MonoBehaviour
     {
         RaycastHit hit;
         // Does the ray intersect any objects excluding the player layer
-        if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.left), out hit, Mathf.Infinity, layerMask))
+        if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.left), out hit, RayCastSize, layerMask))
         {
             Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.left) * hit.distance, Color.green);
         }
         else
         {
-            Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.left) * 1, Color.red);
+            Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.left) * 0.5f, Color.red);
             Debug.Log("Did not Hit");
             PlayerMovementA();
         }
 
-        if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.right), out hit, Mathf.Infinity, layerMask))
+        if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.right), out hit, RayCastSize, layerMask))
         {
             Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.right) * hit.distance, Color.green);
         }
@@ -60,7 +63,7 @@ public class PlayerController2 : MonoBehaviour
             PlayerMovementD();
         }
 
-        if (Input.GetKeyDown(KeyCode.Space) && GroundHit)
+        if (Input.GetKeyDown(KeyCode.Space) && GroundHit || Input.GetKeyDown(KeyCode.UpArrow) && GroundHit)
         {
             m_RigidBody.AddForce(transform.up * thrust);
             GroundHit = false;
@@ -69,7 +72,8 @@ public class PlayerController2 : MonoBehaviour
 
     public void UpdatePlayer()
     {
-        Player.position = Lanes[LaneNumber].position;
+        //Player.position = Lanes[LaneNumber].position;
+        Player.position = new Vector3(Player.position.x, Player.position.y, Lanes[LaneNumber].position.z);
     }
 
     public void PlayerMovementA()
