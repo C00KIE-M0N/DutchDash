@@ -8,12 +8,10 @@ public class AddForce : MonoBehaviour
     [SerializeField] private float speed;
     [SerializeField] private float maxSpeed;
 
-    // Start is called before the first frame update
     private void Start()
     {
     }
 
-    // Update is called once per frame
     private void Update()
     {
         rb.AddForce(transform.forward * speed * 2 * Time.deltaTime / 4);

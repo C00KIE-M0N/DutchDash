@@ -17,6 +17,7 @@ public class SpawnNewSection2 : MonoBehaviour
         if (Other.CompareTag("Player"))
         {
             //TO ADD Object Pooling
+            TempoRegulator.Instance.UpdateChunkcount(1);
             Instantiate(Sections[Random.Range(0, Sections.Length)], SpawnLocation.position, Quaternion.identity, Parent);
         }
     }
