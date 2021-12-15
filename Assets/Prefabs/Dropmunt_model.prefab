@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 7485147636035359421}
   - component: {fileID: 5786929295778716952}
   - component: {fileID: 8623191251184904658}
+  - component: {fileID: -6926770272715643263}
   m_Layer: 0
   m_Name: Dropmunt_model
   m_TagString: Coin
@@ -83,3 +84,15 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &-6926770272715643263
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7830430104941381639}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d98c0af5bc799b4fb4a05adb10665c5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
