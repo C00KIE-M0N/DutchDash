@@ -50,6 +50,7 @@ public class ScoreSystem : MonoBehaviour
         if (other.gameObject.CompareTag("Coin"))
         {
             m_coins++;
+            other.gameObject.SetActive(false);
         }
     }
 

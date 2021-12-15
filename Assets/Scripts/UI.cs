@@ -7,7 +7,7 @@ public class UI : MonoBehaviour
 {
     public void StartButton()
     {
-        SceneManager.LoadScene("CompleteGame");
+        SceneManager.LoadScene(1);
     }
 
     public void QuitButton()
