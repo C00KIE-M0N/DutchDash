@@ -11,9 +11,10 @@ public class ScorePowerUp : MonoBehaviour
 
     public void OnTriggerEnter(Collider other)
     {
-        if (other.tag == "ScoreUp")
+        if (other.gameObject.CompareTag("ScoreUp"))
         {
             powerup = true;
+            other.gameObject.SetActive(false);
         }
     }
 
