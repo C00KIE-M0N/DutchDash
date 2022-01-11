@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class ScoreSystem : MonoBehaviour
 {
@@ -17,7 +18,8 @@ public class ScoreSystem : MonoBehaviour
     }
 
     [SerializeField] private float m_totalScore;
-    [SerializeField] private Text score_text;
+    [SerializeField] private TMP_Text score_text;
+    [SerializeField] private TMP_Text coins_text;
 
     private Vector3 m_oldPosisition;
     private float m_totalDistance;
@@ -50,6 +52,7 @@ public class ScoreSystem : MonoBehaviour
         if (other.gameObject.CompareTag("Coin"))
         {
             m_coins++;
+            coins_text.text = m_coins.ToString();
             other.gameObject.SetActive(false);
         }
     }

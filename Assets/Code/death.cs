@@ -5,7 +5,9 @@ using UnityEngine.SceneManagement;
 
 public class death : MonoBehaviour
 {
+    public AudioSource audio;
     public GameObject panel;
+    public AudioClip deathclip;
     private void Start()
     {
         
@@ -15,6 +17,7 @@ public class death : MonoBehaviour
     {
         if (Other.CompareTag("Player"))
         {
+            audio.clip = deathclip;
             Time.timeScale = 0f;
             panel.gameObject.SetActive(true);
 
