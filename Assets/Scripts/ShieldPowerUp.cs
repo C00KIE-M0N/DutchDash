@@ -10,6 +10,7 @@ public class ShieldPowerUp : MonoBehaviour
     public MeshRenderer Renderer;
 
     private bool m_invincible;
+    public AudioSource pickupAudio;
     
     void Start()
     {
@@ -35,6 +36,7 @@ public class ShieldPowerUp : MonoBehaviour
         }
         if (other.gameObject.CompareTag("Shield"))
         {
+            pickupAudio.Play();
             m_activeShield = true;
             other.gameObject.SetActive(false);
         }
