@@ -157,7 +157,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ae8cc6285967b794882bbf0e4acc2ac8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SpawnLocation: {fileID: 884377344}
   Sections:
   - {fileID: 4398013425547461203, guid: 259d3686c3c99bd468ace222a9e36c17, type: 3}
   - {fileID: 4321284358628928165, guid: 0af5562bf2ab890419100896597743bb, type: 3}
@@ -166,3 +165,4 @@ MonoBehaviour:
   - {fileID: 955282216172608449, guid: df336acb7c48be744a0d30eeddab8103, type: 3}
   - {fileID: 5024964538088298332, guid: 1406e4e1139c94f45939942d14006695, type: 3}
   Parent: {fileID: 0}
+  SpawnLocation: {fileID: 884377344}
