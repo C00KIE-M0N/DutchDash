@@ -8,6 +8,8 @@ TagManager:
   - Shield
   - Coin
   - ScoreUp
+  - ObstacleHay
+  - ObstacleCow
   layers:
   - Default
   - TransparentFX
