@@ -12,13 +12,15 @@ public class ScoreSystem : MonoBehaviour
 
     public float m_coins;
 
+    public AudioSource coinSound;
+
     private void Awake()
     {
         instance = this;
     }
 
-    [SerializeField] private float m_totalScore;
-    [SerializeField] private TMP_Text score_text;
+    [SerializeField] public float m_totalScore;
+    [SerializeField] public TMP_Text score_text;
     [SerializeField] private TMP_Text coins_text;
 
     private Vector3 m_oldPosisition;
@@ -44,13 +46,14 @@ public class ScoreSystem : MonoBehaviour
 
         m_totalScore = m_totalDistance * ScoreMod * (1 + _coins);
         m_totalScore = Mathf.RoundToInt(m_totalScore);
-        score_text.text = m_totalScore.ToString();
+        score_text.text = "Score: " + m_totalScore.ToString();
     }
 
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("Coin"))
         {
+            coinSound.Play();
             m_coins++;
             coins_text.text = m_coins.ToString();
             other.gameObject.SetActive(false);
