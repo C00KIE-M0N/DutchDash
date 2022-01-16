@@ -7,13 +7,12 @@ public class ScorePowerUp : MonoBehaviour
 
     public bool powerup;
     public float timer = 10;
-    public AudioSource audio;
+
 
     public void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("ScoreUp"))
         {
-            audio.Play(); 
             powerup = true;
             other.gameObject.SetActive(false);
         }
