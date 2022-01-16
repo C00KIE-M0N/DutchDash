@@ -347,7 +347,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 52fa0be5477a2af40b3729f47d6352e7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audio: {fileID: 0}
   panel: {fileID: 0}
+  deathclip: {fileID: 0}
 --- !u!1 &1107844797920973453
 GameObject:
   m_ObjectHideFlags: 0
@@ -397,7 +399,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 778458fa0b9099c40bc4328896795935, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ChunkCounter: 0
   rb: {fileID: 1107844797920973491}
   speed: 20
   maxSpeed: 10
@@ -548,7 +549,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 778458fa0b9099c40bc4328896795935, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ChunkCounter: 0
   rb: {fileID: 1107844798292960927}
   speed: 20
   maxSpeed: 10
@@ -566,7 +566,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   layerMask:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 128
   Player: {fileID: 1107844798292960926}
   thrust: 20
   journyTime: 1e+16
@@ -591,7 +591,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb6a4165cbdb75647acd35d55b03f214, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DeathPanel: {fileID: 0}
+  DeathPanel: {fileID: 3780922406247008388, guid: a555aa77b7cd0ca429b4011b9b22ba2b, type: 3}
   Renderer: {fileID: 1107844798292960920}
 --- !u!114 &1107844797671603794
 MonoBehaviour:
@@ -623,6 +623,7 @@ MonoBehaviour:
   m_coins: 0
   m_totalScore: 0
   score_text: {fileID: 0}
+  coins_text: {fileID: 0}
 --- !u!1 &1652925253768157399
 GameObject:
   m_ObjectHideFlags: 0
