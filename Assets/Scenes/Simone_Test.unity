@@ -3902,6 +3902,14 @@ PrefabInstance:
       propertyPath: score_text
       value: 
       objectReference: {fileID: 1799138291}
+    - target: {fileID: 1339858350, guid: 3fd3589996d44f64998ad189850dfae6, type: 3}
+      propertyPath: speed
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1339858350, guid: 3fd3589996d44f64998ad189850dfae6, type: 3}
+      propertyPath: maxSpeed
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1107844797671603795, guid: 3fd3589996d44f64998ad189850dfae6, type: 3}
       propertyPath: coins_text
       value: 
@@ -3913,6 +3921,14 @@ PrefabInstance:
     - target: {fileID: 1107844797920973453, guid: 3fd3589996d44f64998ad189850dfae6, type: 3}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 1107844797920973488, guid: 3fd3589996d44f64998ad189850dfae6, type: 3}
+      propertyPath: speed
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1107844797920973488, guid: 3fd3589996d44f64998ad189850dfae6, type: 3}
+      propertyPath: maxSpeed
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1107844797920973490, guid: 3fd3589996d44f64998ad189850dfae6, type: 3}
       propertyPath: m_RootOrder
@@ -3972,6 +3988,10 @@ PrefabInstance:
       objectReference: {fileID: 1799138289}
     - target: {fileID: 3348496212928796990, guid: 3fd3589996d44f64998ad189850dfae6, type: 3}
       propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7414837578556180758, guid: 3fd3589996d44f64998ad189850dfae6, type: 3}
+      propertyPath: thrust
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []

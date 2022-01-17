@@ -13,7 +13,6 @@ public class death : MonoBehaviour
 
     private void Start()
     {
-        
     }
 
     private void OnTriggerEnter(Collider Other)
@@ -24,9 +23,17 @@ public class death : MonoBehaviour
             audio.clip = deathclip;
             Time.timeScale = 0f;
             panel.gameObject.SetActive(true);
-
         }
     }
 
-   
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            scoretext.text = ScoreSystem.instance.m_totalScore.ToString();
+            audio.clip = deathclip;
+            Time.timeScale = 0f;
+            panel.gameObject.SetActive(true);
+        }
+    }
 }

@@ -12,11 +12,11 @@ public class AddForce : MonoBehaviour
     {
         if (gameObject.name == "Player" || gameObject.name == "Main Camera")
         {
-            rb.AddForce(transform.forward * 15 * TempoRegulator.Instance.GetTempoMod() * Time.deltaTime);
+            rb.AddForce(transform.forward * speed * TempoRegulator.Instance.GetTempoMod() * Time.deltaTime);
         }
         else
         {
-            rb.AddForce(transform.right * 15 * TempoRegulator.Instance.GetTempoMod() * Time.deltaTime);
+            rb.AddForce(transform.right * speed * TempoRegulator.Instance.GetTempoMod() * Time.deltaTime);
         }
     }
 
@@ -26,14 +26,14 @@ public class AddForce : MonoBehaviour
         {
             if (TempoRegulator.Instance.GetChunkCount() % 10 == 0)
             {
-                rb.AddForce(transform.forward * 15 * TempoRegulator.Instance.GetTempoMod() * Time.deltaTime);
+                rb.AddForce(transform.forward * speed * TempoRegulator.Instance.GetTempoMod() * Time.deltaTime);
             }
         }
         else
         {
             if (TempoRegulator.Instance.GetChunkCount() % 10 == 0)
             {
-                rb.AddForce(transform.right * 15 * TempoRegulator.Instance.GetTempoMod() * Time.deltaTime);
+                rb.AddForce(transform.right * speed * TempoRegulator.Instance.GetTempoMod() * Time.deltaTime);
             }
         }
 
