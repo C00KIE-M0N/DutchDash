@@ -10,9 +10,10 @@ public class ShieldPowerUp : MonoBehaviour
     public MeshRenderer Renderer;
 
     private bool m_invincible;
-    
-    void Start()
+
+    private void Start()
     {
+        m_activeShield = false;
         m_invincible = false;
         Renderer = GetComponent<MeshRenderer>();
     }
@@ -27,7 +28,7 @@ public class ShieldPowerUp : MonoBehaviour
                 m_invincible = true;
                 StartCoroutine(BlinkingEffect());
             }
-            else if (!m_activeShield && !m_invincible)  
+            else if (!m_activeShield && !m_invincible)
             {
                 Time.timeScale = 0f;
                 DeathPanel.SetActive(true);
@@ -40,9 +41,10 @@ public class ShieldPowerUp : MonoBehaviour
         }
     }
 
-    IEnumerator BlinkingEffect()
+    private IEnumerator BlinkingEffect()
     {
         #region renderer
+
         Renderer.enabled = false;
         yield return new WaitForSeconds(0.2f);
         Renderer.enabled = true;
@@ -83,7 +85,8 @@ public class ShieldPowerUp : MonoBehaviour
         yield return new WaitForSeconds(0.2f);
         Renderer.enabled = true;
         yield return new WaitForSeconds(0.2f);
-        #endregion
+
+        #endregion renderer
 
         m_invincible = false;
     }
