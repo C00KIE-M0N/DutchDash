@@ -11,6 +11,7 @@ public class ScoreSystem : MonoBehaviour
     public static ScoreSystem instance;
 
     public float m_coins;
+    public AudioSource coinsound;
 
     private void Awake()
     {
@@ -51,6 +52,7 @@ public class ScoreSystem : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Coin"))
         {
+            coinsound.Play();
             m_coins++;
             coins_text.text = m_coins.ToString();
             other.gameObject.SetActive(false);
