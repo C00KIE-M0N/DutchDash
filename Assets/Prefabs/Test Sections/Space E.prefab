@@ -1299,37 +1299,6 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 0}
---- !u!1 &5278698150038818820
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 4773776403178647203}
-  m_Layer: 0
-  m_Name: Spawnlocation (1)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &4773776403178647203
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5278698150038818820}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.123, y: 0.5, z: 0.115}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1942164737515542909}
-  m_RootOrder: 7
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &5658561400099073145
 GameObject:
   m_ObjectHideFlags: 0
@@ -2602,37 +2571,6 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 0}
---- !u!1 &7438886056366485062
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1081613729900967150}
-  m_Layer: 0
-  m_Name: Spawnlocation
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1081613729900967150
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7438886056366485062}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.112, y: 0.5, z: 0.7}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1942164737515542909}
-  m_RootOrder: 6
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &7880267968541111105
 GameObject:
   m_ObjectHideFlags: 0
@@ -3281,7 +3219,6 @@ GameObject:
   - component: {fileID: 2172510100918976962}
   - component: {fileID: 5364214499504004647}
   - component: {fileID: 3518435752712150574}
-  - component: {fileID: 7337386594840911822}
   m_Layer: 0
   m_Name: Space E
   m_TagString: Untagged
@@ -3307,8 +3244,6 @@ Transform:
   - {fileID: 1471930407239623229}
   - {fileID: 444867900569024159}
   - {fileID: 1370478974}
-  - {fileID: 1081613729900967150}
-  - {fileID: 4773776403178647203}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3610,25 +3545,6 @@ MonoBehaviour:
   - {fileID: 2493402855659000625, guid: dffef6553ed54444c9475adf8f5c00b7, type: 3}
   - {fileID: 39650333630075692, guid: 6228bb6778c71a14b8d99057f6b4ed6e, type: 3}
   - {fileID: 9016343650560932395, guid: c5d60f9f2c9db654aa5d36f9f0fc1c6c, type: 3}
---- !u!114 &7337386594840911822
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8795175431925886326}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 269feb82da3ee844d9bc6f11b76c2187, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  PossibleSpawnPoints:
-  - {fileID: 1081613729900967150}
-  - {fileID: 4773776403178647203}
-  Pickups:
-  - {fileID: 7830430104941381639, guid: b41e1f98bad470446b858900a7d5755e, type: 3}
-  - {fileID: 5448871097255266193, guid: 4a780fac5f09c7347a9e8dbd08197ccc, type: 3}
-  - {fileID: 7057731816943144354, guid: 2e403d9e49997bc4b820472af0e1b3e9, type: 3}
 --- !u!1 &8882562830774108218
 GameObject:
   m_ObjectHideFlags: 0

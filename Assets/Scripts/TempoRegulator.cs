@@ -9,11 +9,6 @@ public class TempoRegulator : MonoBehaviour
     private int ChunkCount;
     private float TempoMod;
 
-    private void Awake()
-    {
-        Instance = this;
-    }
-
     private void Start()
     {
         TempoMod = 1;
@@ -36,10 +31,5 @@ public class TempoRegulator : MonoBehaviour
     public float GetTempoMod()
     {
         return TempoMod;
-    }
-
-    public float GetChunkCount()
-    {
-        return ChunkCount;
     }
 }

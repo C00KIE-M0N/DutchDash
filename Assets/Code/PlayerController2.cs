@@ -11,9 +11,8 @@ public class PlayerController2 : MonoBehaviour
     [SerializeField] private int LaneNumber;
     [SerializeField] private float RayCastSize = 0.5f;
     private Rigidbody m_RigidBody;
-    private Animator m_animator;
 
-    private int LayerMask = 1 << 8;
+    int LayerMask = 1 << 8;
 
     public bool GroundHit;
 
@@ -21,7 +20,6 @@ public class PlayerController2 : MonoBehaviour
 
     private void Start()
     {
-        m_animator = GetComponent<Animator>();
         m_RigidBody = GetComponent<Rigidbody>();
         LaneNumber = 2;
     }
@@ -68,7 +66,6 @@ public class PlayerController2 : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space) && GroundHit || Input.GetKeyDown(KeyCode.UpArrow) && GroundHit)
         {
             m_RigidBody.AddForce(transform.up * thrust);
-            m_animator.SetBool("Jumping", true);
             GroundHit = false;
         }
     }

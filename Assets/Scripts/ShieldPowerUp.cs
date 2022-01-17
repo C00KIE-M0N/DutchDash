@@ -11,9 +11,10 @@ public class ShieldPowerUp : MonoBehaviour
 
     private bool m_invincible;
 
-    private void Start()
+    public AudioSource pickup;
+    
+    void Start()
     {
-        m_activeShield = false;
         m_invincible = false;
         Renderer = GetComponent<MeshRenderer>();
     }
@@ -28,7 +29,7 @@ public class ShieldPowerUp : MonoBehaviour
                 m_invincible = true;
                 StartCoroutine(BlinkingEffect());
             }
-            else if (!m_activeShield && !m_invincible)
+            else if (!m_activeShield && !m_invincible)  
             {
                 Time.timeScale = 0f;
                 DeathPanel.SetActive(true);
@@ -36,15 +37,15 @@ public class ShieldPowerUp : MonoBehaviour
         }
         if (other.gameObject.CompareTag("Shield"))
         {
+            pickup.Play();
             m_activeShield = true;
             other.gameObject.SetActive(false);
         }
     }
 
-    private IEnumerator BlinkingEffect()
+    IEnumerator BlinkingEffect()
     {
         #region renderer
-
         Renderer.enabled = false;
         yield return new WaitForSeconds(0.2f);
         Renderer.enabled = true;
@@ -85,8 +86,7 @@ public class ShieldPowerUp : MonoBehaviour
         yield return new WaitForSeconds(0.2f);
         Renderer.enabled = true;
         yield return new WaitForSeconds(0.2f);
-
-        #endregion renderer
+        #endregion
 
         m_invincible = false;
     }
