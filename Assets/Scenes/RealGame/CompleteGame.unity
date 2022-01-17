@@ -364,6 +364,10 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: -0
       objectReference: {fileID: 0}
+    - target: {fileID: 1339858341, guid: 3fd3589996d44f64998ad189850dfae6, type: 3}
+      propertyPath: coinsound
+      value: 
+      objectReference: {fileID: 1476204238}
     - target: {fileID: 1913312632, guid: 3fd3589996d44f64998ad189850dfae6, type: 3}
       propertyPath: m_LocalPosition.x
       value: -3.77

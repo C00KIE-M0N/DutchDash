@@ -64,10 +64,9 @@ public class ScoreSystem : MonoBehaviour
         SaveScore();
     }
 
-
     private void SaveScore()
     {
         PlayerPrefs.SetInt("Score", Mathf.RoundToInt(m_totalScore));
         PlayerPrefs.Save();
     }
-} 
+}

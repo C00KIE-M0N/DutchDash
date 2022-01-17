@@ -303,9 +303,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 52fa0be5477a2af40b3729f47d6352e7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audio: {fileID: 1339858333}
+  audio: {fileID: 0}
   panel: {fileID: 0}
-  deathclip: {fileID: 0}
+  deathclip: {fileID: 8300000, guid: af257df44365e7e4cacd93715195da32, type: 3}
   scoretext: {fileID: 0}
 --- !u!114 &6714205544169276716
 MonoBehaviour:
