@@ -10,6 +10,11 @@ public class UI : MonoBehaviour
         SceneManager.LoadScene(1);
     }
 
+    public void startgame()
+    {
+        SceneManager.LoadScene(2);
+    }
+
     public void QuitButton()
     {
         Application.Quit();
