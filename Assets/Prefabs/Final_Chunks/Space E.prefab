@@ -1096,8 +1096,11 @@ MonoBehaviour:
   SpawnLocation: {fileID: 461656265873842532}
   Parent: {fileID: 0}
   Sections:
-  - {fileID: 8245759654466254522}
-  - {fileID: 0}
+  - {fileID: 1878889665434338579, guid: ae65df39d37845f4a83513c100d49db2, type: 3}
+  - {fileID: 8245759654466254522, guid: c9b6957c35f3f0a479731eb3a218385b, type: 3}
+  - {fileID: 473715021220816431, guid: a39164ce442ac2b43a26a1082fcdc87f, type: 3}
+  - {fileID: 8245759654466254522, guid: 642ce50793826ec45aaf42550994499a, type: 3}
+  - {fileID: 8245759654466254522, guid: 8ecbe89b10bdd9643b82b1b87862737c, type: 3}
 --- !u!1001 &51967974019394305
 PrefabInstance:
   m_ObjectHideFlags: 0

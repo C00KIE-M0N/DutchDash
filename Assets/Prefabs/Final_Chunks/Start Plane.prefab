@@ -227,7 +227,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Sections:
   - {fileID: 1878889665434338579, guid: ae65df39d37845f4a83513c100d49db2, type: 3}
-  - {fileID: 3955088530677891985, guid: c9b6957c35f3f0a479731eb3a218385b, type: 3}
+  - {fileID: 1878889665434338579, guid: ae65df39d37845f4a83513c100d49db2, type: 3}
+  - {fileID: 8245759654466254522, guid: c9b6957c35f3f0a479731eb3a218385b, type: 3}
+  - {fileID: 473715021220816431, guid: a39164ce442ac2b43a26a1082fcdc87f, type: 3}
+  - {fileID: 8245759654466254522, guid: 642ce50793826ec45aaf42550994499a, type: 3}
+  - {fileID: 8245759654466254522, guid: 0151951e6b787c74ebac0fd48a99e3bf, type: 3}
+  - {fileID: 8245759654466254522, guid: 8ecbe89b10bdd9643b82b1b87862737c, type: 3}
   Parent: {fileID: 0}
   SpawnLocation: {fileID: 9022194538026470194}
 --- !u!1 &2103125828303524552
