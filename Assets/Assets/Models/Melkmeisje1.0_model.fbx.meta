@@ -1,94 +1,16 @@
 fileFormatVersion: 2
 guid: 7fb369ccdb31e8f47a7b0a1c5686fb87
 ModelImporter:
-  serializedVersion: 23
-  fileIDToRecycleName:
-    100000: Melkmeisje
-    100002: //RootNode
-    100004: MelkMeisje_Arm
-    100006: MelkMeisje_Arm1
-    100008: MelkMeisje_Body
-    100010: MelkMeisje_Bow
-    100012: MelkMeisje_Bow3
-    100014: MelkMeisje_Braid
-    100016: MelkMeisje_Braid1
-    100018: MelkMeisje_Face
-    100020: MelkMeisje_Hand
-    100022: MelkMeisje_Hand1
-    100024: MelkMeisje_Hat
-    100026: MelkMeisje_Klomp
-    100028: MelkMeisje_Klomp1
-    100030: MelkMeisje_Leg
-    100032: MelkMeisje_Leg1
-    100034: MelkMeisje_Nek
-    100036: MelkMeisje_Nek 1
-    100038: MelkMeisje_Shoulder
-    100040: MelkMeisje_Shoulder1
-    100042: transform1
-    100044: transform10
-    100046: transform11
-    100048: transform12
-    100050: transform13
-    100052: transform14
-    100054: transform15
-    100056: transform16
-    100058: transform17
-    100060: transform18
-    100062: transform2
-    100064: transform3
-    100066: transform4
-    100068: transform5
-    100070: transform6
-    100072: transform7
-    100074: transform8
-    100076: transform9
-    400000: Melkmeisje
-    400002: //RootNode
-    400004: MelkMeisje_Arm
-    400006: MelkMeisje_Arm1
-    400008: MelkMeisje_Body
-    400010: MelkMeisje_Bow
-    400012: MelkMeisje_Bow3
-    400014: MelkMeisje_Braid
-    400016: MelkMeisje_Braid1
-    400018: MelkMeisje_Face
-    400020: MelkMeisje_Hand
-    400022: MelkMeisje_Hand1
-    400024: MelkMeisje_Hat
-    400026: MelkMeisje_Klomp
-    400028: MelkMeisje_Klomp1
-    400030: MelkMeisje_Leg
-    400032: MelkMeisje_Leg1
-    400034: MelkMeisje_Nek
-    400036: MelkMeisje_Nek 1
-    400038: MelkMeisje_Shoulder
-    400040: MelkMeisje_Shoulder1
-    400042: transform1
-    400044: transform10
-    400046: transform11
-    400048: transform12
-    400050: transform13
-    400052: transform14
-    400054: transform15
-    400056: transform16
-    400058: transform17
-    400060: transform18
-    400062: transform2
-    400064: transform3
-    400066: transform4
-    400068: transform5
-    400070: transform6
-    400072: transform7
-    400074: transform8
-    400076: transform9
-    2100000: lambert7
-    2300000: MelkMeisje_Nek
-    3300000: MelkMeisje_Nek
-    4300000: MelkMeisje_Nek
-    9500000: //RootNode
-  externalObjects: {}
+  serializedVersion: 21202
+  internalIDToNameTable: []
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lambert7
+    second: {fileID: 2320895109924836035, guid: 725c5ea194165fa4a8298bf6b9463c1a, type: 3}
   materials:
-    importMaterials: 1
+    materialImportMode: 2
     materialName: 0
     materialSearch: 1
     materialLocation: 1
@@ -97,6 +19,7 @@ ModelImporter:
     bakeSimulation: 0
     resampleCurves: 1
     optimizeGameObjects: 0
+    removeConstantScaleCurves: 1
     motionNodeName: 
     rigImportErrors: 
     rigImportWarnings: 
@@ -121,25 +44,34 @@ ModelImporter:
     meshCompression: 0
     addColliders: 0
     useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
     importVisibility: 1
     importBlendShapes: 1
     importCameras: 1
     importLights: 1
+    nodeNameCollisionStrategy: 1
+    fileIdsGeneration: 2
     swapUVChannels: 0
     generateSecondaryUV: 0
     useFileUnits: 1
-    optimizeMeshForGPU: 1
     keepQuads: 0
     weldVertices: 1
+    bakeAxisConversion: 0
     preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    optimizeBones: 0
+    meshOptimizationFlags: -1
     indexFormat: 0
     secondaryUVAngleDistortion: 8
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
     secondaryUVPackMargin: 4
     useFileScale: 1
-    previousCalculatedGlobalScale: 0.01
-    hasPreviousCalculatedGlobalScale: 1
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
@@ -148,10 +80,10 @@ ModelImporter:
     legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
     blendShapeNormalImportMode: 1
     normalSmoothingSource: 0
+  referencedClips: []
   importAnimation: 1
-  copyAvatar: 0
   humanDescription:
-    serializedVersion: 2
+    serializedVersion: 3
     human: []
     skeleton: []
     armTwist: 0.5
@@ -161,13 +93,17 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
+    globalScale: 1
     rootMotionBoneName: 
     hasTranslationDoF: 0
     hasExtraRoot: 0
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
   animationType: 2
   humanoidOversampling: 1
+  avatarSetup: 0
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
   additionalBone: 0
   userData: 
   assetBundleName: 

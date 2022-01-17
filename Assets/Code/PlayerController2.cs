@@ -68,8 +68,16 @@ public class PlayerController2 : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space) && GroundHit || Input.GetKeyDown(KeyCode.UpArrow) && GroundHit)
         {
             m_RigidBody.AddForce(transform.up * thrust);
-            m_animator.SetBool("Jumping", true);
             GroundHit = false;
+        }
+
+        if (GroundHit)
+        {
+            m_animator.SetBool("Jumping", false);
+        }
+        else
+        {
+            m_animator.SetBool("Jumping", true);
         }
     }
 

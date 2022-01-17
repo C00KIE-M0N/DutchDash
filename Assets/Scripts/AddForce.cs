@@ -10,14 +10,31 @@ public class AddForce : MonoBehaviour
 
     private void Start()
     {
-        rb.AddForce(transform.forward * 15 * TempoRegulator.Instance.GetTempoMod() * Time.deltaTime);
+        if (gameObject.name == "Player" || gameObject.name == "Main Camera")
+        {
+            rb.AddForce(transform.forward * 15 * TempoRegulator.Instance.GetTempoMod() * Time.deltaTime);
+        }
+        else
+        {
+            rb.AddForce(transform.right * 15 * TempoRegulator.Instance.GetTempoMod() * Time.deltaTime);
+        }
     }
 
     private void Update()
     {
-        if (TempoRegulator.Instance.GetChunkCount() % 10 == 0)
+        if (gameObject.name == "Player" || gameObject.name == "Main Camera")
         {
-            rb.AddForce(transform.forward * 15 * TempoRegulator.Instance.GetTempoMod() * Time.deltaTime);
+            if (TempoRegulator.Instance.GetChunkCount() % 10 == 0)
+            {
+                rb.AddForce(transform.forward * 15 * TempoRegulator.Instance.GetTempoMod() * Time.deltaTime);
+            }
+        }
+        else
+        {
+            if (TempoRegulator.Instance.GetChunkCount() % 10 == 0)
+            {
+                rb.AddForce(transform.right * 15 * TempoRegulator.Instance.GetTempoMod() * Time.deltaTime);
+            }
         }
 
         if (rb.velocity.magnitude > maxSpeed)
