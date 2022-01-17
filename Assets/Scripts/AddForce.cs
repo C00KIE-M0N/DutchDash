@@ -10,15 +10,11 @@ public class AddForce : MonoBehaviour
 
     private void Start()
     {
-        rb.AddForce(transform.forward * 15 * TempoRegulator.Instance.GetTempoMod() * Time.deltaTime);
     }
 
     private void Update()
     {
-        if (TempoRegulator.Instance.GetChunkCount() % 10 == 0)
-        {
-            rb.AddForce(transform.forward * 15 * TempoRegulator.Instance.GetTempoMod() * Time.deltaTime);
-        }
+        rb.AddForce(transform.forward * speed * 2 * Time.deltaTime / 4);
 
         if (rb.velocity.magnitude > maxSpeed)
         {
