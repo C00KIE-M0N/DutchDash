@@ -19,6 +19,8 @@ public class PlayerController2 : MonoBehaviour
 
     public Transform[] Lanes;
 
+    public AudioSource jumpsound;
+
     private void Start()
     {
         m_animator = GetComponent<Animator>();
@@ -69,6 +71,7 @@ public class PlayerController2 : MonoBehaviour
         {
             m_RigidBody.AddForce(transform.up * thrust);
             m_animator.SetBool("Jumping", true);
+            jumpsound.Play();
             GroundHit = false;
         }
 
